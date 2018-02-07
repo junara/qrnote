@@ -1,24 +1,29 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
+* App Name
+  * [QRnote](https://qrnote.work)
+* Description
+  * The most simple schedule sharing.
 * Ruby version
-
-* System dependencies
-
+  * 2.4.1
 * Configuration
-
-* Database creation
-
-* Database initialization
+  * config/settings.yml
+  * app/javascript/modules/Setting.js
+* Database
+  * postgresql
 
 * How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
+  * Install [Docker](https://store.docker.com/search?type=edition&offering=community). (I confirmed at only macOS)
+  * And type following command
+    ```
+    docker-compose build
+    docker-compose run web yarn install
+    docker-compose run web rails db:create
+    docker-compose run web rails db:migrate
+    docker-compose up
+    ```
+  * access to [localhost](http://localhost:3000)
+  * enjoy !
 * Deployment instructions
-
-* ...
+  * I deployed this to AWS with ElasticBeanstalk.
+  
