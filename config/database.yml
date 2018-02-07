@@ -1,0 +1,27 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: qrnote_dev
+  username: postgres
+  password:
+  host: db
+
+test:
+  <<: *default
+  database: qrnote_test
+  username: postgres
+  password:
+  host: db
+
+production:
+  <<: *default
+  adapter: postgresql
+  database: <%= Rails.application.secrets.rds_db_name %>
+  username: <%= Rails.application.secrets.rds_username %>
+  password: <%= Rails.application.secrets.rds_password %>
+  host: <%= Rails.application.secrets.rds_hostname %>
+  port: <%= Rails.application.secrets.rds_port %>

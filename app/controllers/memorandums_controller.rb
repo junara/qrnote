@@ -1,0 +1,2 @@
+class MemorandumsController < ApplicationController
+end

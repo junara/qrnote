@@ -1,0 +1,14 @@
+app_name: QRnote
+app_twitter: "@qrnoteofficial"
+
+item:
+  guest_expiration_date_ago: <%= 1.month %>
+  demo_expiration_date_ago: <%= 3.days %>
+  default_duration: 30 # SELECT FROM 10, 15, 20, 30 minutes
+  demo_user_num: 5
+  demo_reservation_num: 10
+
+reservation:
+  default_duration: 30 # minutes
+  show_since: <%= 3 + 1 %> # days
+

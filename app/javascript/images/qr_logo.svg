@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="700px" height="700px" viewBox="0 0 700 700" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.2 (43514) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-4">
+            <rect id="Rectangle" fill="#FFFFFF" x="0" y="0" width="700" height="700"></rect>
+            <rect id="Rectangle" fill="#FFFFFF" x="40" y="53" width="620" height="620" rx="100"></rect>
+            <g id="calendar" transform="translate(98.000000, 98.000000)" fill-rule="nonzero" fill="#000000">
+                <path d="M160.893,89.791 C174.768,89.791 186.019,78.548 186.019,64.657 L186.019,25.118 C186.019,11.252 174.768,0 160.893,0 C147.018,0 135.758,11.252 135.758,25.118 L135.758,64.656 C135.758,78.548 147.018,89.791 160.893,89.791 Z" id="Shape"></path>
+                <path d="M346.184,89.791 C360.051,89.791 371.31,78.548 371.31,64.657 L371.31,25.118 C371.31,11.252 360.05,0 346.184,0 C332.309,0 321.049,11.252 321.049,25.118 L321.049,64.656 C321.048,78.548 332.309,89.791 346.184,89.791 Z" id="Shape"></path>
+                <path d="M433.25,35.807 L393.385,35.807 L393.385,64.656 C393.385,90.696 372.216,111.874 346.184,111.874 C320.152,111.874 298.975,90.696 298.975,64.656 L298.975,35.807 L208.094,35.807 L208.094,64.656 C208.094,90.696 186.916,111.874 160.894,111.874 C134.862,111.874 113.684,90.696 113.684,64.656 L113.684,35.807 L70.75,35.807 C31.773,35.807 0.175,67.406 0.175,106.382 L0.175,441.425 C0.175,480.401 31.773,512 70.75,512 L433.25,512 C472.226,512 503.825,480.401 503.825,441.425 L503.825,106.382 C503.825,67.406 472.226,35.807 433.25,35.807 Z M469.484,441.425 C469.484,461.403 453.228,477.66 433.249,477.66 L70.75,477.66 C50.771,477.66 34.515,461.403 34.515,441.425 L34.515,150.984 L469.484,150.984 L469.484,441.425 Z" id="Shape"></path>
+                <rect id="Rectangle-path" x="170.928" y="382.512" width="63.591" height="63.591"></rect>
+                <rect id="Rectangle-path" x="170.928" y="283.96" width="63.591" height="63.591"></rect>
+                <rect id="Rectangle-path" x="72.385" y="382.512" width="63.582" height="63.591"></rect>
+                <rect id="Rectangle-path" x="72.385" y="283.96" width="63.582" height="63.591"></rect>
+                <rect id="Rectangle-path" x="368.032" y="185.417" width="63.583" height="63.582"></rect>
+                <rect id="Rectangle-path" x="269.48" y="185.417" width="63.591" height="63.582"></rect>
+                <polygon id="Shape" points="346.041 293.216 327.127 278.51 292.686 322.811 272.238 306.454 257.273 325.142 296.677 356.673"></polygon>
+                <rect id="Rectangle-path" x="368.032" y="283.96" width="63.583" height="63.591"></rect>
+                <rect id="Rectangle-path" x="269.48" y="382.512" width="63.591" height="63.591"></rect>
+                <rect id="Rectangle-path" x="170.928" y="185.417" width="63.591" height="63.582"></rect>
+            </g>
+        </g>
+    </g>
+</svg>
