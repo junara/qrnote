@@ -54,10 +54,10 @@ class ItemTopCard extends React.Component {
                       onClick={() => this.setState({memorandumOpen: true})}
                     >
                       <div>
-                        <Typography type='headline' className={classes.displayInline}>
+                        <Typography variant='headline' className={classes.displayInline}>
                           {currentItem.get('name')}
                         </Typography>
-                        <Typography type='headline' className={classes.displayInline}>
+                        <Typography variant='headline' className={classes.displayInline}>
                           の予約表
                         </Typography>
                       </div>
@@ -72,7 +72,7 @@ class ItemTopCard extends React.Component {
                           onClick={() => this.setState({reservationOpen: true})}
                         >
                           <div>
-                            <Typography type={'caption'}><CalendarIcon className={classes.height1em}/>
+                            <Typography variant={'caption'}><CalendarIcon className={classes.height1em}/>
                               予約：<CountUp start={0} end={currentItem.get('reservationCount')}/>
                             </Typography>
                           </div>
@@ -85,7 +85,7 @@ class ItemTopCard extends React.Component {
                           onClick={() => this.setState({userOpen: true})}
                         >
                           <div>
-                            <Typography type={'caption'}><UserIcon className={classes.height1em}/>
+                            <Typography variant={'caption'}><UserIcon className={classes.height1em}/>
                               ユーザー：<CountUp start={0} end={currentItem.get('userCount')}/>人
                             </Typography>
                           </div>

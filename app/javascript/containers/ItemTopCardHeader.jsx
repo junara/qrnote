@@ -30,12 +30,12 @@ class ItemTopCardHeader extends React.Component {
       <div className={classes.rootBox}>
         <Grid container direction={'column'} justify={'flex-end'} spacing={0}>
           <Grid item>
-            <Typography type="caption">
+            <Typography variant="caption">
               作成: {format(currentItem.get('createdAt'), 'YYYY年MMMDo A hh:mm', {locale: ja})}
             </Typography>
           </Grid>
           <Grid item>
-            <Typography type="caption">
+            <Typography variant="caption">
               利用期限: {format(currentItem.get('expirationDate'), 'YYYY年MMMDo A hh:mm', {locale: ja})}
             </Typography>
           </Grid>

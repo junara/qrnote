@@ -91,7 +91,7 @@ class Home extends React.Component {
                 <Grid item>
                   <Typography
                     style={{color: 'white'}}
-                    type='display3'
+                    variant='display3'
                     color='default'
                     align='center'
                   >
@@ -102,7 +102,7 @@ class Home extends React.Component {
                 <Grid item>
                   <Typography
                     style={{color: 'white'}}
-                    type='display3'
+                    variant='display3'
                     color='default'
                     align='center'
                   >
@@ -111,7 +111,7 @@ class Home extends React.Component {
                 </Grid>
               </Grid>
 
-              <Typography type='title'
+              <Typography variant='title'
                           color='default'
                           align='center'
                           gutterBottom
@@ -123,22 +123,22 @@ class Home extends React.Component {
               <img style={{width: '150px'}} src={Image.qrNoteLogo}/>
             </Grid>
             <Grid item>
-              <Button raised color='primary'
+              <Button variant='raised' color='primary'
                       onClick={e => this.props.showItemCreationModal()}
               >
-                <Typography type='display1' color='inherit' style={{padding: '0.5em 0.2em'}}>
+                <Typography variant='display1' color='inherit' style={{padding: '0.5em 0.2em'}}>
                   {'予約表を作成する'}
                 </Typography>
               </Button>
             </Grid>
             <Grid item>
-              <Button raised color='secondary'
+              <Button variant='raised' color='secondary'
                       onClick={this.onClickLiveDemo}
               >
-                <Typography type='title' color='inherit' style={{padding: '0.5em 0.2em'}}>
+                <Typography variant='title' color='inherit' style={{padding: '0.5em 0.2em'}}>
                   {'LIVE DEMO'}
-                  <Typography type={'caption'} color='inherit'>サンプルデータとすべての機能を無料で提供</Typography>
-                  <Typography type={'caption'} color='inherit'>デモ開始から3日後にデータは自動的に削除されます</Typography>
+                  <Typography variant={'caption'} color='inherit'>サンプルデータとすべての機能を無料で提供</Typography>
+                  <Typography variant={'caption'} color='inherit'>デモ開始から3日後にデータは自動的に削除されます</Typography>
                 </Typography>
               </Button>
             </Grid>
@@ -149,15 +149,15 @@ class Home extends React.Component {
           <div className={classes.maxWidth1000}>
             <Grid container spacing={24}>
               <Grid item xs={12}>
-                <Typography type={'display1'} gutterBottom>
+                <Typography variant={'display1'} gutterBottom>
                   {Setting.appName}は誰でも使えるオンライン予約表作成サービスです
                 </Typography>
               </Grid>
               <Grid item xs={12}>
-                <Typography type={'headline'}>
+                <Typography variant={'headline'}>
                   プロジェクターや。実験装置や工作機械。会議室やミーティングスペース。
                 </Typography>
-                <Typography type={'headline'}>
+                <Typography variant={'headline'}>
                   みんなで使うモノ全て、オンライン予約できるようにします。
                 </Typography>
               </Grid>
@@ -166,33 +166,33 @@ class Home extends React.Component {
               <Grid item sm={4} xs={12}>
                 <Grid container>
                   <Grid item xs={12}>
-                    <Typography type={'title'}>ユーザー登録不要です</Typography>
+                    <Typography variant={'title'}>ユーザー登録不要です</Typography>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography
-                      type={'body1'}>予約表の作成に、メールアドレス、パスワードなどのユーザー登録は一切不要です。予約表を作成したいモノの名前を入力さえするだけ。それだけで、専用のオンライン予約表作成完了です。</Typography>
+                      variant={'body1'}>予約表の作成に、メールアドレス、パスワードなどのユーザー登録は一切不要です。予約表を作成したいモノの名前を入力さえするだけ。それだけで、専用のオンライン予約表作成完了です。</Typography>
                   </Grid>
                 </Grid>
               </Grid>
               <Grid item sm={4} xs={12}>
                 <Grid container spacing={24}>
                   <Grid item xs={12}>
-                    <Typography type={'title'}>予約するのもユーザー登録不要です</Typography>
+                    <Typography variant={'title'}>予約するのもユーザー登録不要です</Typography>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography
-                      type={'body1'}>予約表から予約するユーザーもユーザー登録は必要ありません。専用に作られたオンライン予約表にアクセスするだけで、予約表を活用できます</Typography>
+                      variant={'body1'}>予約表から予約するユーザーもユーザー登録は必要ありません。専用に作られたオンライン予約表にアクセスするだけで、予約表を活用できます</Typography>
                   </Grid>
                 </Grid>
               </Grid>
               <Grid item sm={4} xs={12}>
                 <Grid container>
                   <Grid item xs={12}>
-                    <Typography type={'title'}>予約も最短5秒</Typography>
+                    <Typography variant={'title'}>予約も最短5秒</Typography>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography
-                      type={'body1'}>オンライン予約表ができるのは予約するだけ。使い方は非常にシンプル。予約者は、希望時間帯のボタンを押して、名前を入力すれば予約完了です。</Typography>
+                      variant={'body1'}>オンライン予約表ができるのは予約するだけ。使い方は非常にシンプル。予約者は、希望時間帯のボタンを押して、名前を入力すれば予約完了です。</Typography>
                   </Grid>
                 </Grid>
               </Grid>
@@ -203,7 +203,7 @@ class Home extends React.Component {
           <div className={classes.maxWidth1000}>
             <Grid container spacing={24}>
               <Grid item xs={12}>
-                <Typography type={'display1'} gutterBottom>
+                <Typography variant={'display1'} gutterBottom>
                   シェアも簡単
                 </Typography>
               </Grid>
@@ -212,32 +212,32 @@ class Home extends React.Component {
               <Grid item sm={4} xs={12}>
                 <Grid container spacing={24}>
                   <Grid item xs={12}>
-                    <Typography type={'title'}>スマートフォンの予定表と連携</Typography>
+                    <Typography variant={'title'}>スマートフォンの予定表と連携</Typography>
                   </Grid>
                   <Grid item xs={12}>
-                    <Typography type={'body1'}>クリックするだけで予約日時をスマートフォンのカレンダーに登録できます。これで予約を忘れません。</Typography>
-                  </Grid>
-                </Grid>
-              </Grid>
-              <Grid item sm={4} xs={12}>
-                <Grid container spacing={24}>
-                  <Grid item xs={12}>
-                    <Typography type={'title'}>紙の予約表はもう不要</Typography>
-                  </Grid>
-                  <Grid item xs={12}>
-                    <Typography
-                      type={'body1'}>紙の予約表をQRコードのシールに置き換えましょう。ユーザーはスマートフォンでQRコードをスキャンするだけで予約表にアクセスできます。</Typography>
+                    <Typography variant={'body1'}>クリックするだけで予約日時をスマートフォンのカレンダーに登録できます。これで予約を忘れません。</Typography>
                   </Grid>
                 </Grid>
               </Grid>
               <Grid item sm={4} xs={12}>
                 <Grid container spacing={24}>
                   <Grid item xs={12}>
-                    <Typography type={'title'}>データはあなたのもの</Typography>
+                    <Typography variant={'title'}>紙の予約表はもう不要</Typography>
                   </Grid>
                   <Grid item xs={12}>
                     <Typography
-                      type={'body1'}>予約表のデータはあなたのものです。予約内容はいつでも業界標準のデータフォーマットであるiCalendar形式で書き出せるので安心です。</Typography>
+                      variant={'body1'}>紙の予約表をQRコードのシールに置き換えましょう。ユーザーはスマートフォンでQRコードをスキャンするだけで予約表にアクセスできます。</Typography>
+                  </Grid>
+                </Grid>
+              </Grid>
+              <Grid item sm={4} xs={12}>
+                <Grid container spacing={24}>
+                  <Grid item xs={12}>
+                    <Typography variant={'title'}>データはあなたのもの</Typography>
+                  </Grid>
+                  <Grid item xs={12}>
+                    <Typography
+                      variant={'body1'}>予約表のデータはあなたのものです。予約内容はいつでも業界標準のデータフォーマットであるiCalendar形式で書き出せるので安心です。</Typography>
                   </Grid>
                 </Grid>
               </Grid>

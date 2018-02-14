@@ -93,13 +93,13 @@ class ItemCreationDialog extends React.Component {
               }}
             />
             <DialogContentText>
-              <Typography type={'caption'}>
+              <Typography variant={'caption'}>
                 作成された予約表の有効期限は最新の予約作成日から{GUEST_EXPIRATION_DATE_AGO}ヶ月です。
               </Typography>
-              <Typography type={'caption'}>
+              <Typography variant={'caption'}>
                 有効期限が過ぎた予約表は、自動的に削除されます。
               </Typography>
-              <Typography type={'caption'}>
+              <Typography variant={'caption'}>
                 個人が特定できる情報の記載はご遠慮願います。
               </Typography>
             </DialogContentText>

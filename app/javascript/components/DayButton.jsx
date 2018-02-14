@@ -56,10 +56,10 @@ class DayButton extends React.Component {
     return (
       <div style={{width: '3em', display: 'flex', alignItems: 'center', flexDirection: 'column'}}>
         <Paper className={classes.month}>
-          <Typography type={'body1'} color={'inherit'}>{month}月</Typography>
+          <Typography variant={'body1'} color={'inherit'}>{month}月</Typography>
         </Paper>
         <div>
-          <Typography type={'display1'}>{day}</Typography>
+          <Typography variant={'display1'}>{day}</Typography>
         </div>
       </div>
     )

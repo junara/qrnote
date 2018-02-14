@@ -91,7 +91,7 @@ class ItemReserveListBodyHourMin extends React.PureComponent {
               <Grid item>
                 <Grid container justify={'center'} alignItems={'flex-start'}>
                   <Grid item>
-                    <Typography type={'headline'}>{min}分</Typography>
+                    <Typography variant={'headline'}>{min}分</Typography>
                   </Grid>
                 </Grid>
               </Grid>
@@ -111,7 +111,7 @@ class ItemReserveListBodyHourMin extends React.PureComponent {
                             key={index}
                             startDate={startDate}
                             endDate={endDate}
-                            raised={startDate === currentStartDate(duration) ? true : false}
+                            variant={startDate === currentStartDate(duration) ? 'raised' : false}
                             buttonText={isPast(endDate) ? '予約時間外' : isPast(startDate) ? '今から使う' : '予約する'}
                             disabled={isPast(endDate)}
                           />
@@ -156,7 +156,7 @@ class ItemReserveListBodyHour extends React.PureComponent {
                   <Badge
                     badgeContent={format(date, 'A')}
                   >
-                    <Typography type={'display1'}>{format(date, 'hh')}時</Typography>
+                    <Typography variant={'display1'}>{format(date, 'hh')}時</Typography>
                   </Badge>
                 </Grid>
               </Grid>
