@@ -24,7 +24,7 @@ class FetchingScreen extends React.PureComponent {
         {fetching
           ?
           <div className={this.props.classes.screenBackground}>
-            <ReactLoading type={'spin'} delay={0}/>
+            <ReactLoading variant={'spin'} delay={0}/>
           </div>
           :
           <div></div>

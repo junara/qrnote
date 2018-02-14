@@ -83,7 +83,7 @@ class NewItem extends React.Component {
                   onClick={() => {
                     location.href = mailItemHref(currentItem)
                   }}
-                  raised
+                  variant='raised'
                 >
                   URLをメールで送る
                   <MailIcon/>

@@ -19,7 +19,7 @@ class MailToButton extends React.PureComponent {
       >
         {
           children ||
-          <Button raised>
+          <Button variant='raised'>
             URLをコピーする
             <ClipboardIcon/>
           </Button>

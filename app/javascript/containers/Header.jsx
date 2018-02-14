@@ -39,10 +39,10 @@ class Header extends React.Component {
             <Button size={'small'} color="inherit" aria-label="Add to shopping cart" onClick={this._onClick}>
               <img src={Image.qrNoteLogoWhite} style={{height: '1.5em', width: '1.5em', marginRight: '0.4em'}}/>
               <div style={{display: 'flex', alignItems: 'baseline'}}>
-                <Typography type="title" color='inherit'>
+                <Typography variant="title" color='inherit'>
                   {Setting.appName}
                 </Typography>
-                <Typography type="caption" color='inherit'>
+                <Typography variant="caption" color='inherit'>
                   {'alpha'}
                 </Typography>
               </div>

@@ -23,14 +23,14 @@ class ReserveListItem extends React.PureComponent {
   }
 
   render() {
-    const {startDate, endDate, raised = true, buttonText, disabled = false} = this.props
+    const {startDate, endDate, variant = 'raised', buttonText, disabled = false} = this.props
     const formattedStartDate = format(startDate, 'mm')
     const formattedEndDate = format(endDate, 'mm')
     return (
       <Grid item xs>
         <Button
           disabled={disabled}
-          raised={raised} color="primary"
+          variant={variant} color="primary"
           onClick={this._onClick}
           style={{width: '100%'}}
         >

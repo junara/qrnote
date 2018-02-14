@@ -8,8 +8,8 @@ class Error extends React.Component {
   render() {
     return (
       <div>
-        <Typography type='display4'>ERROR</Typography>
-        <Typography type='display1'>{this.props.error.get('message')}</Typography>
+        <Typography variant='display4'>ERROR</Typography>
+        <Typography variant='display1'>{this.props.error.get('message')}</Typography>
       </div>
     )
   }
