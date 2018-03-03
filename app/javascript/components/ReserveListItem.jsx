@@ -30,7 +30,7 @@ class ReserveListItem extends React.PureComponent {
       <Grid item xs>
         <Button
           disabled={disabled}
-          variant={variant} color="primary"
+          variant={variant || 'flat'} color="primary"
           onClick={this._onClick}
           style={{width: '100%'}}
         >

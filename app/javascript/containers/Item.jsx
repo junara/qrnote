@@ -16,6 +16,32 @@ class Item extends React.Component {
   componentWillMount() {
     const token = this.props.token ? this.props.token : this.props.match.params.token
     this.props.attemptFetchItem(token)
+    this.setupSubscription(token)
+  }
+
+  componentWillUnmount () {
+    this.deleteOldSubscription()
+  }
+
+  deleteOldSubscription = () => {
+    if (App.cable.subscriptions['subscriptions'].length > 0) {
+      App.cable.subscriptions['subscriptions'].forEach((subscription) => {
+        App.cable.subscriptions.remove(subscription)
+      })
+    }
+  }
+
+  setupSubscription = (token) => {
+    if (!token) return
+    this.deleteOldSubscription()
+    App.note = App.cable.subscriptions.create({channel: 'NoteChannel', token: token}, {
+      connected: () => {console.log('connected')},
+      disconnected: () => {console.log('disconnected')},
+      received: () => {
+        console.log('received!')
+        this.props.attemptFetchItem(token)
+      },
+    })
   }
 
   render() {

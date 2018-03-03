@@ -21,6 +21,7 @@ module Api
           reservation.post_ip = request.ip
         end
         @reservation.extend_item_expiation_dt
+        SyncItemJob.perform_later(item.token)
       end
 
       def destroy
@@ -29,13 +30,14 @@ module Api
         reservation = Reservation.find_by!(token: @reservation_token)
         @name = reservation.user.name
         reservation.destroy
+        SyncItemJob.perform_later(@item_token)
       end
 
       private
       def reservation_params
         params.slice(:name, :start_dt, :end_dt).permit(:name, :start_dt, :end_dt)
       end
-
+      
     end
   end
 end
