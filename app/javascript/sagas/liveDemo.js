@@ -5,7 +5,7 @@ import {
 } from '../reducers/liveDemo'
 import 'babel-polyfill'
 import {startFetching, stopFetching} from "../reducers/note";
-import {systemError} from "../reducers/app"; // ジェネレータ関数を使うために必須
+import {systemError} from "../reducers/app";
 
 export function* createLiveDemoFlow(action) {
   yield put(startFetching())

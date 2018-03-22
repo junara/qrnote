@@ -1,4 +1,3 @@
-require('intersection-observer');
 import React from 'react'
 import {connect} from 'react-redux'
 import {Range} from 'immutable'
@@ -12,7 +11,6 @@ import {
   isPast,
 } from 'date-fns'
 import scrollToComponent from 'react-scroll-to-component';
-import 'babel-polyfill' // ジェネレータ関数を使うために必須
 
 // material-ui
 import {Typography, List, ListItem, ListSubheader, Grid, Badge} from 'material-ui'
@@ -33,8 +31,6 @@ const styles = theme => ({
     top: 147,
   },
   listSubHeaderInItemPageSticky: {
-    // top: 146 + 80,
-    // zIndex: 2,
     top: 152 + 30,
     zIndex: 11,
     backgroundColor: 'transparent',
