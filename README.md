@@ -4,6 +4,7 @@
   * [QRnote](https://qrnote.work)
 * Description
   * The most simple schedule sharing.
+  * (JAPANESE ONLY) See more information in [RailsとReactでオンライン予約表QRnoteを作って公開した話](https://qiita.com/junara/items/ddba402e277afd5d38b2)
 * Ruby version
   * 2.4.1
 * Configuration

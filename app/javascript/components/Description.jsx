@@ -1,5 +1,4 @@
 import React from 'react'
-import Linkify from 'react-linkify'
 import ReactMarkdown from 'react-markdown'
 
 // material-ui
